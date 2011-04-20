@@ -1,0 +1,7 @@
+Half-finished hacks be here!
+
+It expects a firmware/b43legacy directory to be there with the b43legacy firmware files in it.  WiFi won't work without them, but it'll probably still build.
+
+BOARD_HAVE_BLUETOOTH is defined in BoardConfig.mk beacuse part of the Android build fails without it, and I guess you could plug in a USB BT dongle.
+
+I'm overriding BOARD_KERNEL_CMDLINE because the system hangs in the kernel boot up without acpi=off noapic nolapic on 2.6.38. I'm not positive all 3 are nessesary but it does boot if I specify all of them.
