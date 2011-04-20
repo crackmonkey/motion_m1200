@@ -1,0 +1,2 @@
+service	wacom-input /system/xbin/wacom-input
+
